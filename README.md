@@ -8,22 +8,22 @@ Example
 
 #fetch
 
-$sql = query('SELECT * FROM `test` ORDER BY `id` DESC LIMIT 20');
+$sql = query('SELECT * FROM `test` ORDER BY `id` DESC LIMIT 10');
 
 while($row = fetch($sql))
 {
 
-echo '<b>id '.$row['id'].' : text '.$row['text'].'</b>';
+echo '<div>id '.$row['id'].' : text '.$row['text'].'</div>';
 
 }
 
 #object
 
-$sql = query('SELECT * FROM `test` ORDER BY `id` DESC LIMIT 20');
+$sql = query('SELECT * FROM `test` ORDER BY `id` DESC LIMIT 10');
 
 while($row = obj($sql))
 {
 
-echo '<b>id '.$row->id.' : text '.$row->text.'</b>';
+echo '<div>id '.$row->id.' : text '.$row->text.'</div>';
 
 }
